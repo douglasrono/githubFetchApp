@@ -1,0 +1,124 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color: #0c0c0cf2;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+.container{
+	max-width: 500px;
+	padding: 86px;
+	background-color: #54a0ff;
+}
+.container > h2{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline 3px black;
+	margin: 15px 0;
+}
+
+.input-section :where(input, button){
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 12px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.input-section >input{
+	text-align: center;
+	border: #060606 solid 1px;
+	color: rgb(183, 24, 24);
+}
+.input-section >button{
+	background-color: #2606f5;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: all .5s ease;
+}
+.profile-section{
+	background-color: #fff;
+	padding: 8px;
+}
+.profile-section img{
+	display: block;
+	margin: 10px auto;
+	max-width: 50%;
+	border-radius: 50%;
+	height: auto;
+}
+.user-info{
+	text-align: center;
+	font-size: .7em;
+	font-weight: 500;
+}
+.profile-name, .user-name{
+	color: #1d1f1c;
+}
+.user-info .view-profile{
+	background-color: #131313;
+	width: 40%;
+	margin: 2px auto;
+	color: #fff;
+	padding: 5px;
+	border: #1d1f1c 2px solid;
+
+}
+.row{
+	font-size: .7rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+ .row .followers{
+	background-color: #131313;
+	color: #fff;
+	padding: 5px;
+	border: #1d1f1c 2px solid;
+}
+ .row .following{
+	background-color: #060606;
+	cursor: pointer;
+	color: #fff;
+	padding: 5px;
+	border: #1d1f1c 2px solid;
+}
+.stats-section{
+	background: #191919;
+	text-align: center;
+	padding: 12px;
+}
+.stats-section .projects{
+	text-decoration: underline red 2px;
+	padding: 12px;
+}
+.stats-section p{
+	font-size: 10px;
+
+}
+@media screen and  (max-width:506px) {
+	.container{
+	padding: 16px;
+}
+.container > h2{
+	font-size: 14px;
+	margin: 8px 0;
+}
+
+.input-section :where(input, button){
+	padding: 8px;
+}
+	
+}
